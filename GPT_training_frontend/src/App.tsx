@@ -66,7 +66,9 @@ function App() {
       setLoadingGenQuiz(true)
       setIsQuiz(true)
       setUserAns(undefined)
-      const response = await axios.post('https://8nxoko13y2.execute-api.ap-southeast-1.amazonaws.com/dev/', textareaValue);
+      console.log(textareaValue);
+
+      const response = await axios.post('http://192.168.50.22:5000/generate_quiz', { "data": textareaValue });
       const jsonData = await response.data;
 
       setQuiz({
