@@ -1,0 +1,9 @@
+{
+  "dependencies": {
+    "@mui/styles": "^5.14.10",
+    "axios": "^1.5.0"
+  },
+  "devDependencies": {
+    "serverless-python-requirements": "^6.0.0"
+  }
+}
